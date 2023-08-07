@@ -39,3 +39,15 @@ http://localhost:3000/api/v2/seed
 * MongoDB
 * NestJS
 
+# Production Build
+
+1. Crear el archivo ```.env.prod```
+2. Llenar las variables de entorno de production.
+3. Construir la imagen de la base de datos.
+
+``````
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```````
+
+
+
